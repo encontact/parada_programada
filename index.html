@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>enContact - Parada Programada</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            padding: 50px;
+            max-width: 700px;
+            text-align: center;
+        }
+
+        .logo {
+            margin-bottom: 30px;
+        }
+
+        .logo img {
+            max-width: 250px;
+            height: auto;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2rem;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+
+        .info-text {
+            color: #555;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .schedule {
+            background: #eff6ff;
+            border-left: 4px solid #2563eb;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 4px;
+        }
+
+        .schedule-time {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #2563eb;
+        }
+
+        .contact-info {
+            margin-top: 30px;
+            padding: 20px;
+            background: #fff3cd;
+            border-radius: 8px;
+            border: 1px solid #ffc107;
+        }
+
+        .contact-info p {
+            color: #856404;
+            font-weight: 500;
+            font-size: 1rem;
+        }
+
+        .icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <!-- Logo do enContact - A imagem deve ser referenciada de encontact.com.br -->
+            <img src="https://encontact.com.br/logo.png" alt="enContact Logo" onerror="this.style.display='none'; document.querySelector('.logo-fallback').style.display='block';">
+            <div class="logo-fallback" style="display:none;">
+                <h2 style="color: #2563eb; font-size: 2.5rem;">enContact</h2>
+            </div>
+        </div>
+
+        <div class="icon">⚙️</div>
+
+        <h1>Estamos em Momento de Parada Programada</h1>
+
+        <div class="info-text">
+            <p>Nossos sistemas estão temporariamente indisponíveis para manutenção programada.</p>
+        </div>
+
+        <div class="schedule">
+            <p><strong>Horário da Parada Programada:</strong></p>
+            <p class="schedule-time">23h00 às 03h00</p>
+        </div>
+
+        <div class="info-text">
+            <p>Pedimos desculpas pelo inconveniente. Nossos serviços retornarão em breve.</p>
+        </div>
+
+        <div class="contact-info">
+            <p><strong>Em caso de dúvidas ou urgências, entre em contato com nosso plantão.</strong></p>
+        </div>
+    </div>
+</body>
+</html>
